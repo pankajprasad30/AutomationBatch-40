@@ -1,4 +1,4 @@
-//create 5 constructor and Call it in Main Method
+//create 5 constructor and Call it inside Main Method
 package assignments;
 
 public class Assignment_5 

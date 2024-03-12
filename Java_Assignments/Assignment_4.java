@@ -1,6 +1,5 @@
 //create 5 static method and 5 non static method and call it inside main method 
 package assignments;
-
 public class Assignment_4 
 {
 	static void add()
@@ -69,7 +68,6 @@ public class Assignment_4
 		float mod=a%b;
 		System.out.println(mod);
 	}
-
 	public static void main(String[] args) 
 	{
 		add();// call static method inside main method by its method name.
@@ -83,7 +81,5 @@ public class Assignment_4
 		a1.mult1();
 		a1.div1();
 		a1.mod1();
-
 	}
-
 }
