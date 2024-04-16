@@ -2,6 +2,10 @@ package crossKT;
 
 public class Block_Java 
 {
+	Block_Java()
+	{
+		System.out.println("Pankaj");
+	}
 	static void add()// Static Method
 	{
 		System.out.println("Addition");
@@ -20,13 +24,9 @@ public class Block_Java
 
 	public static void main(String[] args) 
 	{
-		
-		Block_Java a1= new Block_Java();
-		
 		add();
+		Block_Java a1= new Block_Java();
 		a1.multiplication();
-		
-
 	}
 
 }

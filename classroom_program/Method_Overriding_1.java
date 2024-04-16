@@ -1,7 +1,7 @@
 package classroom_program;
 class Parent_Class
 {
-	void add()
+	 void add()
 	{
 		System.out.println("Adding 3 numbers");	
 	}

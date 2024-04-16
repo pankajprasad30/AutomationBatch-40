@@ -19,7 +19,7 @@ public class Switch_Case_Scanner {
 		break;
 		case 4: System.out.println("Switch 4");
 		break;
-		default: System.out.println("Default Switch");
+		//default: System.out.println("Default Switch");
 		
 		}
 

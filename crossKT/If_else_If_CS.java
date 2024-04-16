@@ -10,7 +10,7 @@ public class If_else_If_CS {
 		{
 			System.out.println("A is the outpou");
 		}
-		if (b>70)
+		else if (b>70)
 		{
 			System.out.println("B is the output");
 		}

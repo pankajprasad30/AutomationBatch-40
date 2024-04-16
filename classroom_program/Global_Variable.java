@@ -23,12 +23,7 @@ public class Global_Variable
 		System.out.println(sum);
 		add();
 		Global_Variable a1=new Global_Variable();
-		a1.mul();
-				
-		
-
-		
-		
+		a1.mul();	
 	}
 
 }

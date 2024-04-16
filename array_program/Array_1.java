@@ -6,7 +6,7 @@ public class Array_1 {
 	{
 		int a1[]=new int[3];
 		a1[0]=30;
-		a1[1]=40;
+		a1[1]=(Integer) null;
 		a1[2]=50;
 		
 		for(int i=0;i<3;i++)

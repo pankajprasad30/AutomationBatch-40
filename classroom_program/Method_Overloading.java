@@ -2,7 +2,7 @@ package classroom_program;
 
 public class Method_Overloading 
 {
-	void add()
+	final void add()
 	{
 		System.out.println("Pankaj");
 	}

@@ -14,8 +14,6 @@ public class Non_Static
 		
 		Non_Static a1=new Non_Static();
 		a1.add();
-		
-
 	}
 
 }
