@@ -1,0 +1,36 @@
+package source_FB;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Login_FB 
+{
+	@FindBy(id="email")
+	WebElement User_Name;
+	@FindBy(id="pass")
+	WebElement Password;
+	@FindBy(id="login")
+	WebElement Login;
+	
+	public void UN()
+	{
+		User_Name.sendKeys("pankajprasad@gmail.com");
+	}
+	public void Pswd()
+	{
+		Password.sendKeys("Pankaj@123");
+	}
+	public void Lgn()
+	{
+		Login.click();
+	}
+	
+	public Login_FB(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+
+}

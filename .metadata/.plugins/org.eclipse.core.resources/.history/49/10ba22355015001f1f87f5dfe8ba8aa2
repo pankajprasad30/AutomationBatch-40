@@ -1,0 +1,25 @@
+package testCases_Amazon;
+
+import org.testng.annotations.Test;
+
+import source_Amazon.Home_Page_Amazon;
+import source_Amazon.Login_Amazon;
+
+public class TestCase_3 extends Launch_Quit
+{
+	//Login->Serach->click 1st product->cart->reach till payments page	
+	@Test
+	public void Login_to_Payment()
+	{
+		Login_Amazon L1=new Login_Amazon(driver);
+		L1.un_txtfld();
+		L1.continue_button();
+		L1.pswrd_txtfld();
+		L1.signin_button();
+		
+		Home_Page_Amazon H1=new Home_Page_Amazon(driver);
+		H1.Search_Shoe();
+		H1.first_shoe();
+	}
+
+}

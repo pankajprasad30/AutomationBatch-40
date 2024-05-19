@@ -1,0 +1,26 @@
+package testCases_POM;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class TestCase1 
+{
+	@Test
+	public void amazon_login() throws InterruptedException
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.amazon.in/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		//Hoverover
+		WebElement a1=driver.findElement(By.xpath("//span[.='Hello, sign in']"));
+		Actions b1=new Actions(driver);
+		b1.moveToElement(a1).perform();
+		driver.findElement(By.linkText("Sign in")).click();
+		
+
+}

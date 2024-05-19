@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TypeCasting_Narrowing.java&apos; to &apos;AB_40_Java/src/exam_revesion&apos;&#x0D;&#x0A;- Original project: &apos;AB_40_Java&apos;&#x0D;&#x0A;- Destination element: &apos;AB_40_Java/src/exam_revesion&apos;&#x0D;&#x0A;- Original element: &apos;crossKT.TypeCasting_Narrowing.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;exam_revesion" element1="/src&lt;crossKT{TypeCasting_Narrowing.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1714023884894" units="1" version="1.0"/>
+</session>

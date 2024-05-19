@@ -1,0 +1,8 @@
+package source_POM;
+
+public class Product_Page
+{
+	WebDriver driver;
+	@FindBy()
+
+}

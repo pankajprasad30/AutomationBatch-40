@@ -1,0 +1,14 @@
+package testCases_Amazon;
+
+import org.testng.annotations.Test;
+
+public class TestCase_1 extends Launch_Quit
+{
+	//Login->Search the product->clicking on 1st product->wishlist->cart	
+	@Test
+	public void login_to_cart()
+	{
+		
+	}
+
+}

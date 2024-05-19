@@ -1,0 +1,19 @@
+package selenium.program;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Facebook_create {
+
+	public static void main(String[] args) 
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com/");
+		driver.findElement(By.xpath("(//a[@role='button'])[2]")).sendKeys(Keys.ENTER);
+
+	}
+
+}

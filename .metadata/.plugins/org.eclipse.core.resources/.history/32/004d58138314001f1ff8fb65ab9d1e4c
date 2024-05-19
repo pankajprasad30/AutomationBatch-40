@@ -1,0 +1,51 @@
+package testCases_POM;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import source_POM.Login_Amazon;
+import source_POM.Search_Amazon;
+
+public class TestCase2 
+{
+	@Test
+	public void login_to_logout()
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.amazon.in/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		WebElement a1=driver.findElement(By.xpath("//span[.='Hello, sign in']"));
+		Actions b1=new Actions(driver);
+		b1.moveToElement(a1).perform();
+		driver.findElement(By.linkText("Sign in")).click();
+		
+		Login_Amazon l3=new Login_Amazon(driver);
+		l3.un1();
+		l3.cont();
+		l3.pswd();
+		l3.signin();
+		
+		Search_Amazon l4=new Search_Amazon(driver);
+		l4.search_shoe();
+		l4.Get_It_Today();
+		
+		WebElement a2=driver.findElement(By.xpath("id=\"nav-link-accountList-nav-line-1\""));
+		Actions b2=new Actions(driver);
+		b1.moveToElement(a2).perform();
+		//driver.findElement(By.linkText("Sign in")).click();
+		
+		
+		
+		
+	}
+	
+
+}

@@ -1,0 +1,21 @@
+package source.POM;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Login_FB 
+{
+	//Step:1
+	@FindBy(name="email")
+	WebElement un_txtfld;
+	
+	@FindBy(id="pass")
+	WebElement pswd_txtfld;
+	
+	@FindBy(xpath= "//button[@name='login']")
+	WebElement login_button;
+	
+	
+	
+
+}

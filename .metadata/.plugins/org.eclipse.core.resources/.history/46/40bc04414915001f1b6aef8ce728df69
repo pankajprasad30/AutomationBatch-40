@@ -1,0 +1,13 @@
+package testCases_Amazon;
+
+import org.testng.annotations.Test;
+
+public class TestCase_2 extends Launch_Quit
+{
+	//Login->serach->Sort the products->logout[Sort using 4* ratings,Delivery by Today]	
+	@Test
+	public void login_to_logout()
+	{
+		
+	}
+}

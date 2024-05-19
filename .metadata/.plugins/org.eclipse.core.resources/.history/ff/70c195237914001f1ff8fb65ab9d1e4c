@@ -1,0 +1,46 @@
+package source_POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Login_Amazon 
+{
+	WebDriver driver;
+	@FindBy(name="email")
+	WebElement username;
+	
+	@FindBy(id="continue")
+	WebElement continue_1;
+	
+	@FindBy(id="ap_password")
+	WebElement password;
+	
+	@FindBy(xpath="//span[@id='auth-signin-button']")
+	WebElement signin;
+	
+	public void un()
+	{
+		username.sendKeys("pankajprasad4798@gmail.com");
+	}
+	public void cont()
+	{
+		continue_1.click();
+	}
+	public void pswd()
+	{
+		password.sendKeys("Automation@123");
+	}
+	public void signin()
+	{
+		signin.click();
+	}
+	
+	public Login_Amazon(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+
+}

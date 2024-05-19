@@ -1,0 +1,8 @@
+package source_Amazon;
+
+public class Login_Amazon 
+{
+	//Step: 1
+	@FindBy()
+
+}

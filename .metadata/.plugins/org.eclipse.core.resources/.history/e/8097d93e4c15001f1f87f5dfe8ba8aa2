@@ -1,0 +1,16 @@
+package source_Amazon;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Logout_Page_Amazon 
+{
+	@FindBy(id="nav-link-accountList-nav-line-1")
+	WebElement Logout;
+	
+	public void logout_amazon()
+	{
+		
+	}
+
+}

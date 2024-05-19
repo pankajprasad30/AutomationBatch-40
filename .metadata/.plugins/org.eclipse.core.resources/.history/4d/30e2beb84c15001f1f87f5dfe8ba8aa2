@@ -1,0 +1,30 @@
+package testCases_Amazon;
+
+import org.testng.annotations.Test;
+
+import source_Amazon.Home_Page_Amazon;
+import source_Amazon.Login_Amazon;
+import source_Amazon.Logout_Page_Amazon;
+
+public class TestCase_2 extends Launch_Quit
+{
+	//Login->serach->Sort the products->logout[Sort using 4* ratings,Delivery by Today]	
+	@Test
+	public void login_to_logout()
+	{
+		Login_Amazon L1=new Login_Amazon(driver);
+		L1.un_txtfld();
+		L1.continue_button();
+		L1.pswrd_txtfld();
+		L1.signin_button();
+		
+		Home_Page_Amazon H1=new Home_Page_Amazon(driver);
+		H1.Search_Shoe();
+		H1.Short_By_4Star();
+		H1.Short_GetItToday();
+		
+		Logout_Page_Amazon L2=new Logout_Page_Amazon(driver);
+		L2.logout_amazon();
+		
+	}
+}

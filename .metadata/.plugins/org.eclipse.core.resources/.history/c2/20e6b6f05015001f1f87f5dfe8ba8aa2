@@ -1,0 +1,58 @@
+package source_Amazon;
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Home_Page_Amazon 
+{
+	WebDriver driver;
+	@FindBy(id="twotabsearchtextbox")
+	WebElement search_shoe;
+	
+	@FindBy(xpath="//i[@class='a-icon a-icon-star-medium a-star-medium-4']")
+	WebElement short_by_4star;
+	
+	@FindBy(xpath="//i[@class='a-icon a-icon-checkbox']")
+	WebElement short_by_getittoday;
+	
+	@FindBy(id="(//span[@class='a-size-base-plus a-color-base a-text-normal'])[1]")
+	WebElement First_Shoe;
+	
+	
+	public void Search_Shoe()
+	{
+		search_shoe.sendKeys("Shoes");
+		search_shoe.sendKeys(Keys.ENTER);
+	}
+	public void Short_By_4Star()
+	{
+		short_by_4star.click();
+	}
+	public void Short_GetItToday()
+	{
+		short_by_getittoday.click();
+	}
+	public void first_shoe() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		First_Shoe.click();
+		/*driver.findElement(By.xpath("(//span[@class='a-size-base-plus a-color-base a-text-normal'])[1]")).click();
+		Set<String> s1=driver.getWindowHandles();
+		System.out.println(s1);*/
+		
+	}
+	
+	public Home_Page_Amazon(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+
+}

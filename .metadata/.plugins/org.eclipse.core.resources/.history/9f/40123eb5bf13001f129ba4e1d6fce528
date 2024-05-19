@@ -1,0 +1,20 @@
+package source_POM;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Login_Amazon 
+{
+	@FindBy(name="email")
+	WebElement username;
+	
+	@FindBy(id="continue")
+	WebElement continue_1;
+	
+	@FindBy(id="ap_password")
+	WebElement password;
+	
+	@FindBy(xpath="//span[@id='auth-signin-button']")
+	WebElement signin;
+
+}

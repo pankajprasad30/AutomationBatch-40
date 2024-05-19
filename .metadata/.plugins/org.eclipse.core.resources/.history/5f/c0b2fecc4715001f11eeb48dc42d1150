@@ -1,0 +1,13 @@
+package source_Amazon;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Login_Amazon 
+{
+	//Step: 1
+	@FindBy(id="ap_email")
+	WebElement UserName;
+	
+
+}

@@ -1,0 +1,9 @@
+package testCases_Amazon;
+
+public class TestCase_1 
+{
+	//Login->Search the product->clicking on 1st product->wishlist->cart	
+	@Test
+	public void 
+
+}

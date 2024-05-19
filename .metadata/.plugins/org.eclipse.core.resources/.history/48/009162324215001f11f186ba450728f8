@@ -1,0 +1,13 @@
+package testCases_FB;
+
+import org.testng.annotations.Test;
+
+public class TestCase_1 
+{
+	@Test
+	public void Login_to_FB()
+	{
+		
+	}
+
+}

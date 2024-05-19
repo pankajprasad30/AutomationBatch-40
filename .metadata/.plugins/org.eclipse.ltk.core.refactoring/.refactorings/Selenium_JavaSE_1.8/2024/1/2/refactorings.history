@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Selenium_JavaSE_1.8&apos;&#x0D;&#x0A;- Original project: &apos;Selenium_JavaSE_1.8&apos;&#x0D;&#x0A;- Original element: &apos;Selenium_JavaSE_1.8/src/launch_browser&apos;" description="Delete element" element1="/src&lt;launch_browser" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1705079690741" subPackages="false" version="1.0"/>
+</session>

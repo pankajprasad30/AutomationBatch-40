@@ -1,0 +1,9 @@
+package source.POM;
+
+public class Login 
+{
+	//Step-1, locate each element by @FindBy annotation
+	@FindBy()
+	
+
+}

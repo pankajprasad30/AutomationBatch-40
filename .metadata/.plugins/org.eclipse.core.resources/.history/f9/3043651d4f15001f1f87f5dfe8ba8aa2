@@ -1,0 +1,7 @@
+package testCases_Amazon;
+
+public class TestCase_3 extends Launch_Quit
+{
+	//Login->Serach->click 1st product->cart->reach till payments page	
+
+}

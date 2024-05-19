@@ -1,0 +1,22 @@
+package source_POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Logout_Amazon 
+{
+	WebDriver driver;
+	@FindBy(linkText="Sign Out")
+	WebElement sign_out;
+	public void Sign_Out()
+	{
+		sign_out.click();
+	}
+	public Logout_Amazon(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+}

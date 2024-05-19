@@ -1,0 +1,10 @@
+package Selenium_Maven.Automation_Maven;
+
+public class java_hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

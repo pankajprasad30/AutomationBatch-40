@@ -1,0 +1,30 @@
+package testCases_POM;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import source_POM.Login_Amazon;
+
+public class TestCase2 
+{
+	@Test
+	public void login_to_logout()
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.amazon.in/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		Login_Amazon l3=new Login_Amazon(driver);
+		l3.un1();
+		l3.cont();
+		l3.pswd();
+		l3.signin();
+		
+	}
+	
+
+}

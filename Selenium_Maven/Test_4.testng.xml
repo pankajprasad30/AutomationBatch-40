@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test_4.Suite">
+  <test thread-count="5" name="Test_4.Test">
+	  <groups>
+		  <run><include name="system"></include> <exclude name="smoke"></exclude> </run>
+	  </groups>
+    <classes>
+      <class name="crossBrowser.Test_4"/>
+    </classes>
+  </test> <!-- Test_4.Test -->
+</suite> <!-- Test_4.Suite -->

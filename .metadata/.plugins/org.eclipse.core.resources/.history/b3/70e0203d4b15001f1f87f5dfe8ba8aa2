@@ -1,0 +1,34 @@
+package source_Amazon;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Home_Page_Amazon 
+{
+	@FindBy(id="twotabsearchtextbox")
+	WebElement search_shoe;
+	
+	@FindBy(xpath="//i[@class='a-icon a-icon-checkbox']")
+	WebElement short_by_getittoday;
+	
+	public void Search_Shoe()
+	{
+		search_shoe.sendKeys("Shoes");
+		search_shoe.sendKeys(Keys.ENTER);
+	}
+	public void Short_GetItToday()
+	{
+		short_by_getittoday.click();
+	}
+	
+	public Home_Page_Amazon(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+
+}

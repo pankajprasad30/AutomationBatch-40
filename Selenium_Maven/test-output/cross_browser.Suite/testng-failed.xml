@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [cross_browser.Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="safari.Test(failed)">
+    <parameter name="browser" value="safari"/>
+    <classes>
+      <class name="parallel_crossbrowser.Test_1">
+        <methods>
+          <include name="Launch_Browser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- parallel_crossbrowser.Test_1 -->
+    </classes>
+  </test> <!-- safari.Test(failed) -->
+</suite> <!-- Failed suite [cross_browser.Suite] -->
