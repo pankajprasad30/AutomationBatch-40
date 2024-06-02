@@ -1,0 +1,23 @@
+package source_SpiceJet;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Homepage_SpiceJet 
+{
+	@FindBy(linkText="Signup")
+	WebElement SignUp_Button;
+	
+	public void signup()
+	{
+		SignUp_Button.click();
+	}
+	
+	public Homepage_SpiceJet(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+}

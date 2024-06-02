@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-25T00:22:21 IST" name="Default suite" finished-at="2024-05-25T00:22:26 IST" duration-ms="4989">
+    <groups>
+    </groups>
+    <test started-at="2024-05-25T00:22:21 IST" name="Default test" finished-at="2024-05-25T00:22:26 IST" duration-ms="4989">
+      <class name="test_NG.Broken_Links">
+        <test-method signature="broken_links()[pri:0, instance:test_NG.Broken_Links@3ba9ad43]" started-at="2024-05-25T00:22:21 IST" name="broken_links" finished-at="2024-05-25T00:22:26 IST" duration-ms="4971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broken_links -->
+      </class> <!-- test_NG.Broken_Links -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

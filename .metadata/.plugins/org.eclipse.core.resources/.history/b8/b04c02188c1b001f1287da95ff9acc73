@@ -1,0 +1,19 @@
+package testCases_SpiceJet;
+
+import org.testng.annotations.Test;
+
+import source_SpiceJet.Homepage_SpiceJet;
+
+public class TestCase_1 extends Launch_Quit
+{
+	@Test
+	public void SingUp()
+	{
+		Homepage_SpiceJet h1=new Homepage_SpiceJet(driver);
+		h1.signup();
+		
+	}
+	
+	
+}
+

@@ -1,0 +1,14 @@
+package testCases_SpiceJet;
+
+import org.testng.annotations.Test;
+
+public class TestCase_4 extends Launch_Quit
+{
+	//test the search funcationality for one way flight
+	@Test
+	public void one_way_flight()
+	{
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package testCases_SpiceJet;
+
+public class TestCase_8 extends Launch_Quit
+{
+	/* Verify that the user is presented with additional options like luggage
+	extra legroom, foods/beverages, etc and selecting the same results in additional cost with the booking amount */
+	
+
+}

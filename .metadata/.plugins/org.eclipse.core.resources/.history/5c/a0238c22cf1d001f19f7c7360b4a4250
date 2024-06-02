@@ -1,0 +1,9 @@
+package testCases_SpiceJet;
+
+public class Testcase_7 extends Launch_Quit
+{
+	//test for multicity flight search
+	@Test
+	public void 
+
+}

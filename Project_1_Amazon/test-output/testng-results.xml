@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-26T01:14:45 IST" name="Default suite" finished-at="2024-05-26T01:15:00 IST" duration-ms="15022">
+    <groups>
+    </groups>
+    <test started-at="2024-05-26T01:14:45 IST" name="Default test" finished-at="2024-05-26T01:15:00 IST" duration-ms="15022">
+      <class name="testCases_Amazon.TestCase_15">
+        <test-method is-config="true" signature="Launch_Amazon()[pri:0, instance:testCases_Amazon.TestCase_15@293a5bf6]" started-at="2024-05-26T01:14:45 IST" name="Launch_Amazon" finished-at="2024-05-26T01:14:47 IST" duration-ms="2841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch_Amazon -->
+        <test-method signature="without_login()[pri:0, instance:testCases_Amazon.TestCase_15@293a5bf6]" started-at="2024-05-26T01:14:47 IST" name="without_login" finished-at="2024-05-26T01:14:55 IST" duration-ms="7141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- without_login -->
+        <test-method is-config="true" signature="Quit_Amazon()[pri:0, instance:testCases_Amazon.TestCase_15@293a5bf6]" started-at="2024-05-26T01:14:55 IST" name="Quit_Amazon" finished-at="2024-05-26T01:15:00 IST" duration-ms="5010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Quit_Amazon -->
+      </class> <!-- testCases_Amazon.TestCase_15 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

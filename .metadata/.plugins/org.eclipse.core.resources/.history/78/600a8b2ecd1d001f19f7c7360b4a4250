@@ -1,0 +1,10 @@
+package testCases_SpiceJet;
+
+public class TestCase_6 
+{
+	//validate search results for different classes( Economy, business,first class)
+	@Test
+	public void 
+	
+
+}

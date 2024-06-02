@@ -1,0 +1,7 @@
+package testCases_SpiceJet;
+
+public class Testcase_7 extends Launch_Quit
+{
+	
+
+}

@@ -1,0 +1,59 @@
+package source_SpiceJet;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Homepage_SpiceJet 
+{
+	@FindBy(linkText="Signup")
+	WebElement SignUp_Button;
+	@FindBy(xpath="//div[.='Login']")
+	WebElement Login;
+	@FindBy(xpath="(//input[@type='number'])[1]")
+	WebElement Mobile_No;
+	@FindBy(xpath="//input[@type='password']")
+	WebElement Password;
+	@FindBy(xpath="//div[@data-testid='login-cta']")
+	WebElement Login_Button;
+	
+	public void signup(WebDriver driver)
+	{
+		SignUp_Button.click();
+		Set<String> s1=driver.getWindowHandles();
+		Iterator<String> Browser_ID=s1.iterator();
+		String Parent_Browser_ID=Browser_ID.next();
+		String Child_Browser_ID=Browser_ID.next();
+		driver.switchTo().window(Child_Browser_ID);	
+	}
+	public void login()
+	{
+		Login.click();
+	}
+	public void mobile_no()
+	{
+		Mobile_No.sendKeys("9930034615");
+	}
+	public void password()
+	{
+		Password.sendKeys("Automation@123");
+	}
+	public void login_button()
+	{
+		Login_Button.click();
+	}
+	
+	
+	
+	
+	public Homepage_SpiceJet(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+
+}

@@ -1,0 +1,14 @@
+package testCases_SpiceJet;
+
+import org.testng.annotations.Test;
+
+public class TestCase_2 extends Launch_Quit
+{
+	//validate login funcationality with valid un & pswd
+	@Test
+	public void Login()
+	{
+		
+	}
+
+}

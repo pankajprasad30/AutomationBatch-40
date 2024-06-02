@@ -1,0 +1,101 @@
+package source_SpiceJet;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class SignUp_Page_SpiceJet 
+{
+	@FindBy(xpath="//select[@class='form-control form-select ']")
+	WebElement Title_Dropdown;
+	@FindBy(id="first_name")
+	WebElement FirstName_TextField;
+	@FindBy(id="last_name")
+	WebElement LastName_TextField;
+	@FindBy(xpath="//select[@class='form-control form-select']")
+	WebElement Country_Dropdown;
+	
+	@FindBy(id="dobDate")
+	WebElement Date_Button;
+	@FindBy(className="react-datepicker__month-select")
+	WebElement Month_DropDown;
+	@FindBy(className="react-datepicker__year-select")
+	WebElement Year_DropDown;
+	@FindBy(xpath="//div[.='23']")
+	WebElement Date_Selection;
+	
+	@FindBy(xpath="//input[@class=' form-control']")
+	WebElement MobileNo_TextField;
+	@FindBy(id="email_id")
+	WebElement Email_TextField;
+	@FindBy(id="new-password")
+	WebElement Password_TextField;
+	@FindBy(id="c-password")
+	WebElement C_Password_TextField;
+	
+	
+	
+	public void title_dropdown(WebDriver driver)
+	{
+		Select s1=new Select(Title_Dropdown);
+		s1.selectByVisibleText("Mr");	
+	}
+	public void FirstName_TextField()
+	{
+		FirstName_TextField.sendKeys("Pankaj");
+	}
+	public void LastName_TextField()
+	{
+		LastName_TextField.sendKeys("Prasad");
+	}
+	public void country_dropdown(WebDriver driver)
+	{
+		Select s1=new Select(Country_Dropdown);
+		s1.selectByVisibleText("Iceland ");	
+	}
+	public void Date_button()
+	{
+		Date_Button.click();
+	}
+	public void month_dropdown(WebDriver driver)
+	{
+		Select s1=new Select(Month_DropDown);
+		s1.selectByVisibleText("December");	
+	}
+	public void year_dropdown(WebDriver driver)
+	{
+		Select s1=new Select(Year_DropDown);
+		s1.selectByVisibleText("1986");	
+	}
+	@Test(dependsOnMethods="year_dropdown")
+	public void date_selection()
+	{
+		Date_Selection.click();
+	}
+	public void mobile_no()
+	{
+		MobileNo_TextField.sendKeys("9930034615");
+	}
+	public void email()
+	{
+		Email_TextField.sendKeys("pankajprasad30@gmail.com");
+	}
+	public void password()
+	{
+		Email_TextField.sendKeys("Automation@123");
+	}
+	public void con_password()
+	{
+		Email_TextField.sendKeys("Automation@123");
+	}
+	
+	
+	public SignUp_Page_SpiceJet(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+}

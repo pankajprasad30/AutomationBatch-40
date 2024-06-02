@@ -1,0 +1,36 @@
+package source_SpiceJet;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Boooking_Page 
+{
+	@FindBy(xpath="(//input[@class='css-1cwyjr8 r-homxoj r-poiln3 r-ubezar r-1eimq0t r-1e081e0 r-xfkzu9 r-lnhwgy'])[1]")
+	WebElement First_Name;
+	@FindBy(xpath="(//input[@class='css-1cwyjr8 r-homxoj r-poiln3 r-ubezar r-1eimq0t r-1e081e0 r-xfkzu9 r-lnhwgy'])[2]")
+	WebElement Last_Name;
+	@FindBy(xpath="(//input[@class='css-1cwyjr8 r-homxoj r-poiln3 r-ubezar r-1eimq0t r-1e081e0 r-xfkzu9 r-lnhwgy'])[3]")
+	WebElement Email_Add;
+	
+	public void FIRST_NAME()
+	{
+		First_Name.sendKeys("PANKAJ");
+	}
+	public void LAST_NAME()
+	{
+		Last_Name.sendKeys("PRASAD");
+	}
+	public void Email()
+	{
+		Email_Add.sendKeys("pankajprasad30@gmail.com");
+	}
+	
+	
+	public Boooking_Page(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+}

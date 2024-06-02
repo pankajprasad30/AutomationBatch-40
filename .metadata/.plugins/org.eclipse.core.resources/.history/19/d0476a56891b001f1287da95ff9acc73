@@ -1,0 +1,11 @@
+package testCases_SpiceJet;
+
+public class Launch_Quit 
+{
+	@BeforeMethod
+	public void Launch()
+	{
+		
+	}
+
+}

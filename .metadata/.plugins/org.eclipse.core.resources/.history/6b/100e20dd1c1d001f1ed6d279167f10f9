@@ -1,0 +1,81 @@
+package source_SpiceJet;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Homepage_SpiceJet 
+{
+	@FindBy(linkText="Signup")
+	WebElement SignUp_Button;
+	@FindBy(xpath="//div[.='Login']")
+	WebElement Login;
+	@FindBy(xpath="(//input[@type='number'])[1]")
+	WebElement Mobile_No;
+	@FindBy(xpath="//input[@type='password']")
+	WebElement Password;
+	@FindBy(xpath="//div[@data-testid='login-cta']")
+	WebElement Login_Button;
+	@FindBy(xpath="(//input[@class='css-1cwyjr8 r-homxoj r-ubezar r-10paoce r-13qz1uu'])[1]")
+	WebElement Source_City;
+	@FindBy(xpath="(//input[@class='css-1cwyjr8 r-homxoj r-ubezar r-10paoce r-13qz1uu'])[2]")
+	WebElement Destination_City;
+	@FindBy(xpath="//div[@class='css-76zvg2 css-bfa6kz r-homxoj r-ubezar']")
+	WebElement Date_Selection;
+	
+	public void signup(WebDriver driver)
+	{
+		SignUp_Button.click();
+		Set<String> s1=driver.getWindowHandles();
+		Iterator<String> Browser_ID=s1.iterator();
+		String Parent_Browser_ID=Browser_ID.next();
+		String Child_Browser_ID=Browser_ID.next();
+		driver.switchTo().window(Child_Browser_ID);	
+	}
+	public void login()
+	{
+		Login.click();
+	}
+	public void mobile_no()
+	{
+		Mobile_No.sendKeys("9930034615");
+	}
+	public void password()
+	{
+		Password.sendKeys("Automation@123");
+	}
+	public void invalid_password()
+	{
+		Password.sendKeys("Automation@12jhkjhjk67857965976E3");
+	}
+	public void login_button()
+	{
+		Login_Button.click();
+	}
+	public void source_city()
+	{
+		Source_City.sendKeys("Banga");
+	}
+	public void destination_city()
+	{
+		Destination_City.sendKeys("Mum");
+	}
+	public void date_selection()
+	{
+		Date_Selection.click();
+	}
+	
+	
+	
+	
+	public Homepage_SpiceJet(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+
+}

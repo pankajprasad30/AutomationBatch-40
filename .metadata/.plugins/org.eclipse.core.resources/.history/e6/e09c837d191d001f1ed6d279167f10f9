@@ -1,0 +1,7 @@
+package testCases_SpiceJet;
+
+public class TestCase_4 extends Launch_Quit
+{
+	//test the search funcationality for one way flight
+
+}
