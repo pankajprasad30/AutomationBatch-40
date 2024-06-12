@@ -1,0 +1,13 @@
+package testCases_SpiceJet;
+
+import org.testng.annotations.Test;
+
+public class Testcase_9 extends Launch_Quit
+{
+	@Test
+	public void Multiple_Passenger()
+	{
+		
+	}
+
+}

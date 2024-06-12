@@ -1,0 +1,70 @@
+package testCases_Amazon;
+
+import java.io.File;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+public class Listeners implements ITestListener
+{
+	static WebDriver driver;
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestStart(result);
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestSuccess(result);
+		
+		TakesScreenshot t1=     driver;
+		File Source=t1.getScreenshotAs(OutputType.FILE);
+        File Destination=new File("C:\\Users\\Pankaj Prasad\\Desktop\\Selenium Screenshot\\2.jpeg");
+        FileHandler.copy(Source, Destination);
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestFailure(result);
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestSkipped(result);
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
+	}
+
+	@Override
+	public void onTestFailedWithTimeout(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestFailedWithTimeout(result);
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onStart(context);
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onFinish(context);
+	}
+
+}

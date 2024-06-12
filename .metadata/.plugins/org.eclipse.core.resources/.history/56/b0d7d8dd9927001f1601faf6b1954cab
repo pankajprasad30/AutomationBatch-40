@@ -1,0 +1,33 @@
+package final_exam;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class YouTube 
+{
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+
+		WebDriver driver= new EdgeDriver();
+		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.youtube.com/");
+		WebElement search=driver.findElement(By.xpath("(//input[@id='search'])[1]"));
+		Thread.sleep(2000);
+		search.sendKeys("Narendra Modi"+Keys.ENTER);
+		driver.findElement(By.xpath("(//div[@class='yt-spec-touch-feedback-shape__fill'])[7]")).click();
+		WebElement UserName=driver.findElement(By.id("identifierId"));
+		UserName.sendKeys("pankajprasad4798@gmail.com"+ Keys.ENTER);
+		WebElement Password=driver.findElement(By.name("Passwd"));
+		Password.sendKeys("Darshika_@4798"+Keys.ENTER);
+		
+		
+	}
+
+}

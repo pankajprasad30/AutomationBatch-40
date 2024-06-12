@@ -1,0 +1,29 @@
+package final_exam;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Flipkart {
+
+	public static void main(String[] args) 
+	{
+		WebDriver driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.flipkart.com/");
+		WebElement search=driver.findElement(By.name("q"));
+		search.sendKeys("mouse");
+		
+		driver.findElement(By.xpath("(//form[@class='_2rslOn header-form-search OpXDaO']/ul/li)[2]")).click();
+		//int Count_Auto=Autosuggestion.size();
+		//Autosuggestion.get(Count_Auto-6).click();
+		Autosuggestion.cl
+
+	}
+
+}

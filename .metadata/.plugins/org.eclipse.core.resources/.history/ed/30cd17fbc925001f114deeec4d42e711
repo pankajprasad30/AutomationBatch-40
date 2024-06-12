@@ -1,0 +1,15 @@
+package testCases_SpiceJet;
+
+import org.testng.annotations.Test;
+
+public class TestCase_10 extends Launch_Quit
+{
+	// Validate the flight information, fare details, baggage rules and cancellations link has the details in the search result page.
+	
+	@Test
+	public void Flight_Details()
+	{
+		
+	}
+
+}

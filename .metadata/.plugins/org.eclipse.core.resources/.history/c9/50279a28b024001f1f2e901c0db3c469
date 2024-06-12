@@ -1,0 +1,8 @@
+package testCases_SpiceJet;
+
+import org.testng.ITestListener;
+
+public class Listener_SpiceJet implements ITestListener
+{
+
+}

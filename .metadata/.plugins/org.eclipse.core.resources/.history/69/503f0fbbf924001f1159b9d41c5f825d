@@ -1,0 +1,39 @@
+package testCases_Amazon;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import source_Amazon.Home_Amazon;
+import source_Amazon.Login_Amazon;
+
+public class TestCase_5 extends Launch_Quit
+{
+	//Test searching for products using its name like shoes
+	@Test
+	public void Shoe_Search()
+	{
+		Login_Amazon h1=new Login_Amazon(driver);
+		h1.hoverover(driver);
+		h1.signin_button();
+		h1.username();
+		h1.continue_button();
+		h1.password();
+		h1.signin_button_1();
+		
+		Home_Amazon h2=new Home_Amazon(driver);
+		h2.shoe_search();
+		//Method : 1 for assert
+		//Assert.assertTrue(true, "https://www.amazon.in/s?k=shoe&crid=370IVPT378V36&sprefix=shoe%2Caps%2C218&ref=nb_sb_noss_1");
+		
+		//Method : 2 for assert
+		WebElement w1=driver.findElement(By.xpath("//span[@class='a-color-state a-text-bold']"));
+		//Assert.assertEquals("\"Shoes\"", w1.getText());
+		
+		//Method : 3 for assert
+		Assert.assertEquals("Amazon.in : Shoes", driver.getTitle());
+		
+	}
+
+}
