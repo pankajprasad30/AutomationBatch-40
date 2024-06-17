@@ -1,0 +1,7 @@
+package testCases_SpiceJet;
+
+public class TestCase_15 extends Launch_Quit
+{
+	//Reacht till payment page and select credit card option --> enter card details and make payment
+
+}

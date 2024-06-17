@@ -1,0 +1,24 @@
+package source_SpiceJet;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class AddOn_Page 
+{
+	@FindBy()
+	WebElement sks;
+	
+	public void continue_button()
+	{
+		
+	}
+	
+	
+	public AddOn_Page(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+}

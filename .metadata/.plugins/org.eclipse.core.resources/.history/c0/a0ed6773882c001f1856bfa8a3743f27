@@ -1,0 +1,15 @@
+package testCases_SpiceJet;
+
+import org.testng.annotations.Test;
+
+public class TestCase_15 extends Launch_Quit
+{
+	//Reach till payment page and select credit card option --> enter card details and make payment
+	
+	@Test
+	public void Till_Payement_Page()
+	{
+		
+	}
+
+}

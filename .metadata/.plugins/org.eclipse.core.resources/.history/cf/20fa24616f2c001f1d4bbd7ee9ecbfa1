@@ -1,0 +1,14 @@
+package testCases_SpiceJet;
+
+import org.testng.annotations.Test;
+
+public class TestCase_12 extends Launch_Quit
+{
+	//login to spice ject search the flight and logout
+	@Test
+	public void login_search_logout()
+	{
+		
+	}
+
+}

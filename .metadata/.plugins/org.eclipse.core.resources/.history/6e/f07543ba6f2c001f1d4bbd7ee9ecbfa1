@@ -1,0 +1,30 @@
+package testCases_SpiceJet;
+
+import org.testng.annotations.Test;
+
+import source_SpiceJet.Homepage_SpiceJet;
+
+public class TestCase_12 extends Launch_Quit
+{
+	//login to spice ject search the flight and logout
+	@Test
+	public void login_search_logout() throws InterruptedException
+	{
+		Homepage_SpiceJet h1=new Homepage_SpiceJet(driver);
+		h1.login();
+		h1.mobile_no();
+		h1.password();
+		Thread.sleep(2000);
+		h1.login_button();
+		
+		Homepage_SpiceJet h2=new Homepage_SpiceJet(driver);
+		h2.source_city();
+		h2.source_name();
+		h2.destination_city();
+		h2.destination_name();
+		h2.date_forward_button();
+		h2.date_select();
+		h2.flight_search_button();
+	}
+
+}

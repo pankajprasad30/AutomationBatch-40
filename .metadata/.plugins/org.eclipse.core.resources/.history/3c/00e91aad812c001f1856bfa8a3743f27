@@ -1,0 +1,8 @@
+package testCases_SpiceJet;
+
+public class TestCase_13 extends Launch_Quit
+{
+	//check if user is able to apply coupon code while ordering the product
+	
+
+}
