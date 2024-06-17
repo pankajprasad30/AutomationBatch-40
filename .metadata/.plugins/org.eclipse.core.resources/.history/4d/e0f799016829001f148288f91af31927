@@ -1,0 +1,12 @@
+package revision_13_06_2024;
+
+public class String_2 {
+
+	public static void main(String[] args) 
+	{
+		String a="pankajhhejqwhk2`12`1*&^!@#*&!";
+		a.replaceAll("[a-b1-9]", "");
+
+	}
+
+}

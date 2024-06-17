@@ -1,0 +1,15 @@
+package revision_13_06_2024;
+
+public class String_1 
+{
+	String_1 ()
+	{
+		System.out.println("Pankaj");
+	}
+
+	public static void main(String[]args)
+	{
+		new String_1 
+	}
+
+}

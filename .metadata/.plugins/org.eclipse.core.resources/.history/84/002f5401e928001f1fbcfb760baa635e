@@ -1,0 +1,27 @@
+package selenium.program;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.ss.util.NumberToTextConverter;
+
+public class DDT_2 {
+
+	public static void main(String[] args) throws EncryptedDocumentException, IOException 
+	{
+		FileInputStream f1=new FileInputStream("C:\\Users\\Pankaj Prasad\\eclipse-workspace\\Selenium_Maven\\Excel_Sheet\\excel.xlsx");
+		Workbook wb=WorkbookFactory.create(f1);
+		String un=wb.getSheet("login").getRow(9).getCell(0).getStringCellValue();
+		String pwd=wb.getSheet("login").getRow(2).getCell(1).getStringCellValue();
+		
+		//String pwd=NumberToTextConverter.toText(wb.getSheet("login").getRow(2).getCell(1).getNumericCellValue());
+	
+		System.out.println(un);
+		System.out.println(pwd);
+
+	}
+
+}
