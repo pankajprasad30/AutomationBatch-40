@@ -9,7 +9,7 @@ public class TestCase_1 extends Launch_Quit
 {
 	// test if a new user can successfully register.
 	@Test
-	public void Registration_Amazon()
+	public void Registration_Amazon1()
 	{
 		Login_Amazon h1=new Login_Amazon(driver);
 		h1.hoverover(driver);
