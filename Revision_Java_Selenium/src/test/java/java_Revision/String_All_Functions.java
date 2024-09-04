@@ -1,0 +1,32 @@
+package java_Revision;
+
+public class String_All_Functions {
+
+	public static void main(String[] args) 
+	{
+		String s1="Pankaj Prasad";
+		String s2="   Pankaj Prasadd   ";
+		String s3="Darshika";
+		String s4="pankaj&@$!^#*$&^!(";
+		System.out.println(s1.charAt(8));
+		System.out.println(s1.length());
+		System.out.println(s1.toLowerCase());
+		System.out.println(s1.toUpperCase());
+		System.out.println(s1.indexOf('d'));
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.matches(s2));
+		
+		System.out.println(s2.trim());
+		System.out.println(s1.concat(s2));
+		System.out.println(s1.replace(s1, s3));
+		System.out.println(s1.replaceAll("[A-Z]", " "));
+		System.out.println(s1.substring(3));
+		System.out.println(s1.subSequence(0, 6));
+		System.out.println(s1.isEmpty());
+		
+		System.out.println(s4.replaceAll("[a-z]", " "));
+		System.out.println(s4.replaceAll("[^a-z]", ""));
+
+	}
+
+}

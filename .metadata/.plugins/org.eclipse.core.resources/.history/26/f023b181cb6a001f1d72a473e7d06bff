@@ -1,0 +1,20 @@
+package java_Revision;
+
+public class Method_Overloading 
+{
+	static void pankaj()
+	{
+		
+	}
+	static void pankaj(int a)
+	{
+		
+	}
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

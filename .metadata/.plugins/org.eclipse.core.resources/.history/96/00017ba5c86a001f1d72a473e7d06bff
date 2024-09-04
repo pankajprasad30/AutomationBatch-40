@@ -1,0 +1,13 @@
+package java_Revision;
+
+public class Static_Method 
+{
+	
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

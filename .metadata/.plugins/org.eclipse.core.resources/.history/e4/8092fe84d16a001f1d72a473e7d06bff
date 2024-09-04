@@ -1,0 +1,32 @@
+package java_Revision;
+
+class GrandParent
+{
+	static void add()
+	{
+		System.out.println("one");
+	}
+}
+class parent extends GrandParent
+{
+	static void sub()
+	{
+		System.out.println("two");
+	}
+	
+}
+
+public class Multi_Level_Inheritance extends parent
+{
+	static void div()
+	{
+		System.out.println("three");
+	}
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

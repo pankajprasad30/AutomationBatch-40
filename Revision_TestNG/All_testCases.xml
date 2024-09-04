@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="revision_02_07_2024.TestNG_Annotaions"/>
+      <class name="revision_02_07_2024.Test_Invocation"/>
+      <class name="revision_02_07_2024.Annotaions_Priority"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

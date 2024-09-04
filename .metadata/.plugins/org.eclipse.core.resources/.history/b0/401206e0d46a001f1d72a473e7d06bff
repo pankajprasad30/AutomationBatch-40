@@ -1,0 +1,24 @@
+package java_Revision;
+
+class mummy
+{
+	static void add()
+	{
+		System.out.println("Mummy");
+	}
+}
+
+public class Method_Overriding extends mummy
+{
+	static void add()
+	{
+		System.out.println("Addition");
+	}
+
+	public static void main(String[] args) 
+	{
+		add();
+
+	}
+
+}

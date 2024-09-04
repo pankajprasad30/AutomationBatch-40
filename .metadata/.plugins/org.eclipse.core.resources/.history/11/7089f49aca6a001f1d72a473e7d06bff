@@ -1,0 +1,16 @@
+package java_Revision;
+
+public class Constructor_1 
+{
+	Constructor_1()
+	{
+		System.out.println("Pankaj");
+	}
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

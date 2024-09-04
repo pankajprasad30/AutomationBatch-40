@@ -1,0 +1,32 @@
+package java_Revision;
+
+interface website
+{
+	void login();
+	void logout();
+}
+
+public class Interface_Prog implements website
+{
+
+	public static void main(String[] args) 
+	{
+		Interface_Prog i1=new Interface_Prog();
+		i1.login();
+		i1.logout();
+
+	}
+
+	@Override
+	public void login() {
+		System.out.println("Login");
+		
+	}
+
+	@Override
+	public void logout() {
+		System.out.println("Logout");
+		
+	}
+
+}

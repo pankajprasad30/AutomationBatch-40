@@ -1,0 +1,16 @@
+package java_Revision;
+
+public class Static_Method 
+{
+	static void pankaj()
+	{
+		System.out.println("Pankaj Prasad");
+	}
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

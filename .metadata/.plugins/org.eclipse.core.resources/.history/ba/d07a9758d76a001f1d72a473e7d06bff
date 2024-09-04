@@ -1,0 +1,22 @@
+package java_Revision;
+
+abstract class delhi
+{
+	abstract void sub();//AM
+}
+
+public  class Abstract_Program 
+{
+	void add()// CM
+	{
+		System.out.println("Addition");
+	}
+
+	public static void main(String[] args) 
+	{
+		Abstract_Program a1=new Abstract_Program();
+		a1.add();
+
+	}
+
+}

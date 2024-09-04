@@ -1,0 +1,18 @@
+package java_Revision;
+
+interface website
+{
+	void login();
+	void logout();
+}
+
+public class Interface_Prog implements website
+{
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

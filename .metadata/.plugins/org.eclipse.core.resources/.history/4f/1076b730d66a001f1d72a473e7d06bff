@@ -1,0 +1,16 @@
+package java_Revision;
+
+public abstract class Abstract_Program 
+{
+	 void add()
+	{
+		System.out.println("Addition");
+	}
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

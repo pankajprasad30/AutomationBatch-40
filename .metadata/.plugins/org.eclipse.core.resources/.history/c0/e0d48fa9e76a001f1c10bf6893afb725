@@ -1,0 +1,23 @@
+package java_Revision;
+
+class India
+{
+	India()
+	{
+		System.out.println("India");
+	}
+}
+public class SuperCalling_Statement extends India
+{
+	SuperCalling_Statement()
+	{
+		System.out.println("SuperCalling_Statement");
+	}
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

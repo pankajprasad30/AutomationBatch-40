@@ -1,0 +1,14 @@
+package java_Revision;
+
+public class Non_Static_Method
+{
+	void add()
+	{
+		
+	}
+	
+	public static void main(String[]args)
+	{
+		
+	}
+}

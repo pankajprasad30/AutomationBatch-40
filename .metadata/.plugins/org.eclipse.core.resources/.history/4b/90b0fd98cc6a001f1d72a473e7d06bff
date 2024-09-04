@@ -1,0 +1,33 @@
+package java_Revision;
+
+public class Method_Overloading 
+{
+	static void pankaj()
+	{
+		System.out.println("");
+	}
+	static void pankaj(int a)
+	{
+		System.out.println("");
+	}
+	void prasad()
+	{
+		System.out.println("");
+	}
+	void prasad(byte a)
+	{
+		System.out.println("");
+	}
+
+	public static void main(String[] args) 
+	{
+		pankaj();
+		pankaj(10);
+		
+		Method_Overloading m1=new Method_Overloading();
+		m1.prasad();
+		//m1.prasad(10);
+
+	}
+
+}
