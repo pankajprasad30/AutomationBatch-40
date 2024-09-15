@@ -1,0 +1,32 @@
+package selenium_Revision;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Component_Check {
+
+	public static void main(String[] args) 
+	{
+		 WebDriver driver=new ChromeDriver();
+		 driver.manage().window().maximize();
+		 driver.get("file:///D:/Java-Selenium%20Tools/Selenium_File/learningHTML1.html");
+		 WebElement LastName=driver.findElement(By.id("121"));
+		 
+		 boolean b1=LastName.isDisplayed();
+		 //System.out.println(b1);
+		 if(b1==true)
+		 {
+			 System.out.println("Is displayed");
+		 }
+		 else
+		 {
+			 System.out.println("Is not displayed");
+		 }
+		 boolean field_enabled=LastName.isEnabled();
+		 System.out.println(field_enabled);
+
+	}
+
+}

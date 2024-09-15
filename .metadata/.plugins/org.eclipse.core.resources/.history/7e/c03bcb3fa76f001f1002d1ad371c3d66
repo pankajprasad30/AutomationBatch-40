@@ -1,0 +1,37 @@
+package selenium_Revision;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.JavascriptExecutor;
+
+public class Amazon_ScroolUP_ScrollDown {
+
+	public static void main(String[] args) 
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.amazon.in");
+		//driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Shoes"+Keys.ENTER);
+		
+		//locate-Step:1
+		WebElement w1=driver.findElement(By.xpath("//a[.='About Us']"));
+		Point p1=w1.getLocation();
+		int x=p1.getX();
+		int y=p1.getY();
+		System.out.println(x);
+		System.out.println(y);
+		
+		JavascriptExecutor js1=(JavascriptExecutor) driver;
+		js1.executeScript("window.scrollBy(0,2000)");
+		
+		
+
+	}
+
+}

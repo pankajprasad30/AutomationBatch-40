@@ -1,0 +1,13 @@
+package testNG_Revision;
+
+import org.testng.annotations.Test;
+
+public class Data_Sending_Other_way 
+{
+	@Test
+	public void google()
+	{
+		
+	}
+
+}

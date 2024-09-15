@@ -1,0 +1,16 @@
+package testNG_Revision;
+
+import org.testng.annotations.Test;
+
+public class Annotation_TestNG {
+
+	@Test
+	public static void addition()
+	{
+		int a=30,b=70;
+		int sum;
+		sum=a+b;
+		System.out.println(sum);
+	}
+
+}

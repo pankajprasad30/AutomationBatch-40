@@ -1,0 +1,15 @@
+package testNG_Revision;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TestNG_Assertion 
+{
+	@Test
+	public void add()
+	{
+		//Assert.assertTrue(false);
+		Assert.assertTrue(true);
+	}
+
+}

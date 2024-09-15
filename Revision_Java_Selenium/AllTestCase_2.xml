@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testNG_Revision.Google_launch"/>
+      <class name="testNG_Revision.Annotation_TestNG"/>
+      <class name="testNG_Revision.Grouping_TestNG"/>
+      <class name="testNG_Revision.TestNG_Assertion"/>
+      <class name="testNG_Revision.Depends_On_Method"/>
+      <class name="testNG_Revision.Two_Dimensonal_DataProvider"/>
+      <class name="testNG_Revision.Data_Provider"/>
+      <class name="testNG_Revision.Annotation_Parameters"/>
+      <class name="iRetry_Prog.IRetry_Prog"/>
+      <class name="testNG_Revision.Data_Provider_YouTube"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

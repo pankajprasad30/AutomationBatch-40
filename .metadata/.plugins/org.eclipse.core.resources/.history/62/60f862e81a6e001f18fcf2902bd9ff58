@@ -1,0 +1,31 @@
+package selenium_Revision;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.ss.util.NumberToTextConverter;
+
+public class DDT_Excel {
+
+	public static void main(String[] args) throws EncryptedDocumentException, IOException 
+	{
+		FileInputStream f1=new FileInputStream("C:\\Users\\Pankaj Prasad\\Desktop\\Selenium_Screenshot\\pankaj\\ddt.xlsx");
+		Workbook wb= WorkbookFactory.create(f1);
+//		String username=wb.getSheet("login").getRow(1).getCell(0).getStringCellValue();
+//		String password=wb.getSheet("login").getRow(1).getCell(1).getStringCellValue();
+	
+		String username=wb.getSheet("login").getRow(6).getCell(0).getStringCellValue();
+		//String password=wb.getSheet("login").getRow(6).getCell(1).getStringCellValue();
+		String password=NumberToTextConverter.toText(wb.getSheet("login").getRow(6).getCell(1).getNumericCellValue());
+		
+		/// remember IllegalStateException
+		
+		System.out.println(username);
+		System.out.println(password);
+
+	}
+
+}

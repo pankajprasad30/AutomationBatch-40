@@ -1,0 +1,10 @@
+package selenium_Revision;
+
+public class Amazon_ScroolUP_ScrollDown {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

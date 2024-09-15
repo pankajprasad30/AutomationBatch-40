@@ -1,0 +1,13 @@
+package testNG_Revision;
+
+import org.testng.annotations.Test;
+
+public class Annotation_Priority {
+
+	@Test
+	public void add()
+	{
+		System.out.println("Pankaj");
+	}
+
+}

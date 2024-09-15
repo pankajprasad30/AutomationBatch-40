@@ -1,0 +1,10 @@
+package iRetry_Prog;
+
+public class IRetry_Logic implements iretryAnalyzer
+{
+	int count=1;
+	int result=2;
+	
+	
+
+}
