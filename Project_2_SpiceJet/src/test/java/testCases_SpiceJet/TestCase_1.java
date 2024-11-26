@@ -8,7 +8,7 @@ import source_SpiceJet.SignUp_Page_SpiceJet;
 public class TestCase_1 extends Launch_Quit
 {
 	@Test
-	public void SingUp()
+	public void SingUp1()
 	{
 		Homepage_SpiceJet h1=new Homepage_SpiceJet(driver);
 		h1.signup(driver);

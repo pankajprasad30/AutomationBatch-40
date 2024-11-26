@@ -8,7 +8,7 @@ public class TestCase_2 extends Launch_Quit
 {
 	//validate login functionality with valid un & pswd
 	@Test
-	public void Login() throws InterruptedException
+	public void Login2() throws InterruptedException
 	{
 		Homepage_SpiceJet h1=new Homepage_SpiceJet(driver);
 		h1.login();

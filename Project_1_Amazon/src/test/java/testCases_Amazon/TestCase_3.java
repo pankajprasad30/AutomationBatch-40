@@ -8,7 +8,7 @@ public class TestCase_3 extends Launch_Quit
 {
 	//Login into amazon website with invalid credentials.
 		@Test
-		public void Login_Amazon_Wronng_UN_PSWD()
+		public void Login_Amazon_Wronng_UN_PSWD3()
 		{
 			Login_Amazon h1=new Login_Amazon(driver);
 			h1.hoverover(driver);

@@ -8,7 +8,7 @@ public class TestCase_2 extends Launch_Quit
 {
 	//Login into amazon website with valid credentials.
 	@Test
-	public void Login_Amazon()
+	public void Login_Amazon2()
 	{
 		Login_Amazon h1=new Login_Amazon(driver);
 		h1.hoverover(driver);
